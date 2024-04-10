@@ -16,4 +16,8 @@ describe("validateValue", () => {
 	test("incorect -50", () => {
 		expect(ValidateValue(-50)).toBe(false);
 	});
+	test("correct 25", () => {
+		expect(ValidateValue(25)).not.toBe(false);
+	});
+
 });
